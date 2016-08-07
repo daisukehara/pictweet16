@@ -1,0 +1,7 @@
+<%= link_to"投稿する", "/tweets/new", method: :get %>
+
+<% @tweets.each do |tweet| %>
+<%= tweet.user.nickname%>さんの投稿
+<%= tweet.image %>
+<%= tweet.text %>
+<% end %>
